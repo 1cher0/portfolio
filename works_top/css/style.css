@@ -1,0 +1,239 @@
+.works_top {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+h1 {
+  width: 17%;
+  margin: 0 auto;
+}
+
+.panel-area h2 {
+  padding-top: 64px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.panel-area p {
+  padding-top: 8px;
+  font-size: 16px;
+}
+.works_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  background: rgba(105, 104, 104, 0.05);
+}
+.works_item a {
+  margin: auto;
+}
+.works_item img {
+  max-height: 300px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.works_item p {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 32px;
+  color: #476b6b;
+}
+
+.coming-soon {
+  width: 100%;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+.item_text {
+  text-align: left;
+}
+h3 {
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+h4 {
+  margin: 0;
+  font-weight: normal;
+  padding-top: 4px;
+  font-size: 14px;
+}
+.coment p {
+  font-size: 16px;
+  padding-top: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+/* ホバーマスク実装 */
+.works_item .caption {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.works_item .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.works_item:hover .mask {
+  opacity: 1; /* マスクを表示する */
+  padding-top: 32%; /* ホバーで下にずらす */
+}
+/* タブ実装 */
+ul {
+  list-style-type: none;
+}
+.tab-area {
+  display: flex;
+  cursor: pointer; /* カーソルポインターに */
+  padding-top: 80px;
+}
+.tab {
+  width: 150px;
+  height: 50px;
+  margin-right: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  background: rgba(71, 107, 107, 0.3);
+  font-weight: bold;
+  color: #476b6b;
+  border-radius: 0px 10px 0px 0px;
+}
+.tab:first-child {
+  margin-left: 50px;
+}
+.tab:last-child {
+  width: 190px;
+}
+.tab.active {
+  background-color: #476b6b;
+  color: #ffffff;
+}
+.panel {
+  display: none;
+  text-align: center;
+}
+.panel-area {
+  border-top: 4px solid #476b6b;
+}
+.panel.active {
+  display: block;
+}
+.panel.active ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 16px 0 64px;
+  padding: 0 15px;
+}
+.panel.active li {
+  width: 44%;
+  padding-top: 48px;
+}
+
+/* フッター */
+footer {
+  margin-top: 112px;
+}
+
+/* 分岐点 (pad対応) */ /* 分岐点 (pad対応) */ /* 分岐点 (pad対応) */
+@media screen and (max-width: 1100px) {
+}
+
+/* sp_レスポンシブ */ /* sp_レスポンシブ */ /* sp_レスポンシブ */
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+  }
+  main {
+    margin: 0 5%;
+  }
+  .works_top {
+    padding-top: 50px;
+  }
+  h1 {
+    width: 32%;
+  }
+  .panel-area h2 {
+    padding-top: 32px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .panel-area p {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+  .coming-soon {
+    width: 100%;
+    padding: 70px;
+    box-sizing: border-box;
+  }
+  /* タブ実装 */
+  .tab-area {
+    display: flex;
+    cursor: pointer; /* カーソルポインターに */
+    padding-top: 32px;
+  }
+  .tab {
+    height: 30px;
+    margin-right: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(71, 107, 107, 0.3);
+    font-size: 12px;
+    color: #476b6b;
+    border-radius: 0px 10px 0px 0px;
+  }
+  .tab:first-child {
+    margin-left: 5px;
+  }
+  .tab.active {
+    background-color: #476b6b;
+    color: #ffffff;
+  }
+  .panel {
+    display: none;
+    text-align: center;
+  }
+  .panel-area {
+    border-top: 2px solid #476b6b;
+  }
+  .panel.active {
+    display: block;
+  }
+  .panel.active ul {
+    display: block;
+    margin: 16px 0 64px;
+    padding: 0;
+  }
+  .panel.active li {
+    width: 100%;
+    padding: 32px 0;
+  }
+  .section-boarder {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #476b6b;
+  }
+
+  /* フッター */
+  footer {
+    margin-top: 18px;
+  }
+}

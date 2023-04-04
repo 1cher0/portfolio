@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDEO SAKURAGI PORTFOLIO</title>
+    <meta name="description" content="美容室「LIFE hair design」のコーポレートサイト紹介">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header id="header" class="header">
+        <div class="header_ttl link_hover">
+            <a href="../index.html#header"><img src="../images/ttl.png" alt="HIDEO SAKURAGI PORTFOLIO"></a>
+        </div>
+        <div class="header_box pc_only"><span></span></div>
+        <p class="pc_only">menu</p>
+        <div class="pagetop_pc pc_only link_hover">
+            <a href="#header"><img src="../images/pagetop_pc.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="pagetop_sp sp_only link_hover">
+            <a href="#header"><img src="../images/pagetop_sp.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="btn_nav"><span></span></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html#home">home</a></li>
+                <li><a href="../about/index.html">about</a></li>
+                <li><a href="../index.html#service">service</a></li>
+                <li><a href="../works_top/index.html">works</a></li>
+                <li><a href="../contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="work_head"> <!--制作物の画像-->
+            <img src="images/mock_life@2x.png" alt="モックアップ画像">
+        </div>
+        <div class="work_body">
+            <!-- 作品切り替えの左右ボタン -->
+            <a href="web_designcafe.html"><img src="images/btn_right.png" alt="次の作品に進む" class="btn_right"></a>
+            <div class="work_wrap">
+                <div class="work_web_content scrollanime downup">
+                    <!-- 制作実績紹介 テキスト欄 -->
+                    <div class="sticky">
+                        <div class="work_ttl">
+                            <h2>美容室「LIFE hair design」</h2>
+                            <h3>LP型コーポレートサイト</h3>
+                        </div>
+                        <ul class="work_text">
+                            <li>
+                                <p class="lead">概要</p>
+                                <p class="detail">開業10周年を機会にwebサイトをリニューアル。20代〜50代女性をメインのターゲットとし、また認知向上・予約獲得が主な目的とする。
+                                </p>
+                            </li>
+                            <li>
+                                <p class="lead">担当範囲</p>
+                                <p class="detail">素材集め / デザイン</p>
+                            </li>
+                            <li>
+                                <p class="lead">制作期間</p>
+                                <p class="detail">10日間</p>
+                            </li>
+                            <li>
+                                <p class="lead">使用ツール</p>
+                                <p class="detail">Illustrator / Photoshop</p>
+                            </li>
+                            <li>
+                                <p class="lead">制作のポイント</p>
+                                <p class="detail">
+                                    ターゲットが20代〜50代女性ということで、広めの余白を取り、またコーポレートカラーのピンクを基調に使用カラー、フォントともに落ち着いた印象のサイトに。予約へのコンバージョンを下げないため、「予約する」ボタンを常に押せるようヘッダーに配置した。
+                                </p>
+                            </li>
+                        </ul>
+                        <!-- back/home ボタン(PC) -->
+                        <div class="btn_wrap pc_only">
+                            <a href="../works_top/index.html#tab-area" class="btn_back">制作実績一覧</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 制作実績紹介 キャプチャー欄 -->
+                <div class="work_web_capture scrollanime downup">
+                    <img src="images/capture_life_pc.jpg" alt="キャプチャー画像">
+                </div>
+            </div>
+            <!-- back/home ボタン(sp) -->
+            <div class="btn_wrap sp_only">
+                <a href="../works_top/index.html#tab-area" class="btn_back">制作実績一覧</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer" class="footer">
+        <div class="footer_wrap">
+            <img src="../images/footer_logp.png" alt="HIDEO SAKURAGI PORTFOLIO">
+            <p class="copyright">©2023 HIDEO SAKURAGI</p>
+        </div>
+    </footer>
+    <!-- ここからjQueryの記述 -->
+
+    <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.btn_nav, menu li').on('click', function () {
+                $('.btn_nav').toggleClass('open');
+                $('.menu').fadeToggle();
+            });
+
+            // フェイドイン
+            $(window).scroll(function () {
+                const wHeight = $(window).height();
+                const scrollAmount = $(window).scrollTop();
+                $('.scrollanime').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scrollAmount > targetPosition - wHeight + 60) {
+                        $(this).addClass("fadeInDown");
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

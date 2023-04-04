@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDEO SAKURAGI PORTFOLIO</title>
+    <meta name="description" content="桜木英雄のポートフォリオサイト">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header id="header" class="header">
+        <div class="header_ttl link_hover">
+            <img src="images/ttl.png" alt="HIDEO SAKURAGI PORTFOLIO">
+        </div>
+        <div class="header_box pc_only"><span></span></div>
+        <p class="pc_only">menu</p>
+        <div class="pagetop_pc pc_only link_hover">
+            <a href="#header"><img src="images/pagetop_pc.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="pagetop_sp sp_only link_hover">
+            <a href="#header"><img src="images/pagetop_sp.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="btn_nav"><span></span></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="about/index.html">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="works_top/index.html">works</a></li>
+                <li><a href="contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ファーストビュー -->
+        <div id="home" class="home">
+            <div class="fv">
+                <img src="images/main_pc.jpg" alt="トップ画像" class="pc_only">
+                <img src="images/main_sp@2x.jpg" alt="トップ画像" class="sp_only">
+            </div>
+            <div class="home_bg">
+                <div class="logo">
+                    <div class="logo_rotate">
+                        <img src="images/top_logo.png" alt="ロゴ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about(自己紹介) -->
+        <div id="about" class="about">
+            <div class="about_wrap scrollanime downup">
+                <img src="images/about_visual@2x.png" alt="" class="sp_only">
+                <div class="about_message">
+                    <img src="images/anout_line_01.png" alt="装飾" class="message_line01">
+                    <img src="images/about_line_02.png" alt="装飾" class="message_line02">
+                    <p class="about_ttl">デザインを通して、<br class="sp_only">お客様のありたい姿を叶えたい<br>お客様の前身・繁栄のきっかけに。</p>
+                    <p class="about_text">春になると桜の蕾が開くように、現状に課題を感じている方々に、自らがデザインし制作した物を通して未来に希望を感じていただき、花を咲かせたい。
+                    </p>
+                    <p></p>
+                    <p class="about_text">
+                        お客様の夢（ありたい姿）や想いを丁寧にヒアリングし、<br>それを基に誠心誠意コンテンツを作成させていただきます。<br>二人三脚で「目標や夢」を実現するためのお手伝いをします。
+                    </p>
+                </div>
+                <div class="about_visual">
+                    <img src="images/about_visual@2x.png" alt="" class="pc_only">
+                    <div class="btn_more"><a href="about/index.html">view more</a></div> <!--moreボタン-->
+                </div>
+            </div>
+        </div>
+        <!-- service(できること) -->
+        <section id="service" class="service">
+            <h2><img src="images/service_ttl.png" alt="Service(できること)"></h2>
+            <div class="service_wrap scrollanime downup">
+                <div class="service_content">
+                    <img src="images/service_No._01.png" alt="01" class="service_no1">
+                    <h3>デザイン</h3>
+                    <div class="service_icon">
+                        <img src="images/service_01.png" alt="アイコン(デザイン)">
+                    </div>
+                    <p>コーポレートサイト(ホームページ)やランディングページなどのサイト制作、ロゴやチラシなどのグラフィック制作を行います。ただデザインするだけでなく、特にヒアリングを重視し、お客様の想いを汲み取った上で課題解決に繋げることを意識したデザインに取り組んでいきます。
+                    </p>
+                </div>
+                <div class="service_content">
+                    <img src="images/service_No._02.png" alt="02" class="service_no2">
+                    <h3>コーディング</h3>
+                    <div class="service_icon">
+                        <img src="images/service_02.png" alt="アイコン(コーディング)">
+                    </div>
+                    <p>パソコンだけでなく、タブレットやスマートフォンにも対応したレスポンシブサイトを制作致します。また、jQueryなどを用いて動的な、見ていてワクワクするようなサイト制作も可能です。誰が見ても読みやすいコードを書くことを意識しています。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- works(制作実績) -->
+        <section id="works" class="works">
+            <div class="banner_slide scrollanime downup">
+                <img src="images/works_banner.png" alt="HIDEO SAKURAGI'S Works">
+                <img src="images/works_banner.png" alt="HIDEO SAKURAGI'S Works">
+            </div>
+            <h2><img src="images/works_ttl.png" alt="Works(制作実績)"></h2>
+            <div class="works_block scrollanime downup">
+                <div class="works_item link_hover">
+                    <a href="works_detail/web_life.html">
+                        <img src="images/works_life@2x.png" alt="ポートフォリオ「HIDEO SAKURAGI PORTFOLIO」"></a>
+                </div>
+                <div class="works_item link_hover">
+                    <a href="works_detail/web_life.html">
+                        <img src="images/mock_life@2x.png" alt="美容室「LIFE hair design」"></a>
+                </div>
+                <div class="works_item link_hover">
+                    <a href="works_detail/web_designcafe.html"><img src="images/mock_designcafe@2x.png"
+                            alt="カフェ「design cafe」"></a>
+                </div>
+                <div class="works_item  link_hover">
+                    <a href="works_detail/web_workers.html"><img src="images/mock_workers@2x.png"
+                            alt="コワーキングスペース「Workers」"></a>
+                </div>
+                <div class="works_item link_hover">
+                    <a href="works_detail/banner_dx-burger01.html"><img src="images/mock_dxburger@2x.png"
+                            alt="「DXバーガー」"></a>
+                </div>
+                <div class="works_item link_hover">
+                    <a href="works_detail/banner_trrrrip.html"><img src="images/mock_trrrrip@2x.png"
+                            alt="旅行アプリ「trrrrip.」"></a>
+                </div>
+            </div>
+            <div class="btn_more">
+                <a href="works_top/index.html">view more</a>
+            </div>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer id="footer" class="footer">
+        <div class="footer_wrap">
+            <img src="images/footer_logp.png" alt="HIDEO SAKURAGI PORTFOLIO">
+            <p class="copyright">©2023 HIDEO SAKURAGI</p>
+        </div>
+    </footer>
+
+    <!-- ここからjQueryの記述 -->
+    <script>
+        $(function () {
+            // ファーストビュー
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var scrollScale = scroll / 100;
+
+                // スクロール量とscaleを連動
+                if (scroll == 0) {
+                    $('.logo_rotate img').css('transform', 'scale(1)');
+                } else if (scrollScale > 1) {
+                    $('.logo_rotate img').css('transform', 'scale(' + scrollScale + ')');
+                }
+
+                // ファーストビューの背景をフェードアウト
+                if (scrollScale > 4) {
+                    $('.fv').addClass('is-fadeout');
+                } else {
+                    $('.fv').removeClass('is-fadeout');
+                }
+
+            });
+
+            // ハンバーガーメニュー
+            $('.btn_nav, .menu li').on('click', function () {
+                $('.btn_nav').toggleClass('open');
+                $('.menu').fadeToggle();
+            });
+
+            // ページのトップに戻る
+            $('.pagetop').click(function () {
+                var speed = 500; // スクロール速度(ミリ秒)
+                var href = $(this).attr("href");
+                var target = $(href == "#header" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+
+            // works 画像スライド
+            $('.works_block').slick({
+                dots: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                // autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+
+            // フェイドイン
+            $(window).scroll(function () {
+                const wHeight = $(window).height();
+                const scrollAmount = $(window).scrollTop();
+                $('.scrollanime').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scrollAmount > targetPosition - wHeight + 60) {
+                        $(this).addClass("fadeInDown");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

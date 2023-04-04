@@ -1,0 +1,268 @@
+/* about */
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+h1 {
+  width: 17%;
+  margin: 0 auto;
+}
+.about_profile {
+  width: 37%;
+  margin: 88px auto 0;
+  text-align: center;
+  border-top: 2px solid #555555;
+  border-bottom: 2px solid #555555;
+}
+.profile_name {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.profile_date {
+  padding-bottom: 25px;
+  font-size: 17px;
+  letter-spacing: 0.1em;
+}
+.about_wrap {
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+/* about_wrap 共通項目 始め */
+.about_list01,
+.about_list02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 64px;
+}
+.about_list01 h2,
+.about_list02 h2,
+.about_list03 h2 {
+  color: #476b6b;
+  font-size: 32px;
+}
+.about_list01 p,
+.about_list02 p,
+.about_list03 p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 2;
+}
+/* about_wrap 共通項目 終わり */
+
+.about_list01 img {
+  width: 45%;
+}
+.about_list01_text {
+  width: 48%;
+}
+.about_list02 img {
+  width: 36%;
+}
+.about_list02_text {
+  width: 57%;
+}
+.about_list03 {
+  width: 75%;
+  margin: 0 auto;
+}
+.about_list03 h2,
+about_list03 p {
+  text-align: center;
+}
+
+/* skill */
+.skill {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 112px;
+}
+.skill h2 {
+  width: 15%;
+  margin: 0 auto;
+}
+.skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+.skill_list li {
+  width: 30%;
+  text-align: center;
+  margin: 0 1% 50px;
+}
+.skill_list img {
+  height: 130px;
+  min-width: 140px;
+}
+.skill_list img:last-child {
+  min-width: 173px;
+}
+.skill_list p {
+  text-align: left;
+  padding-top: 16px;
+  line-height: 1.5;
+}
+/* アコーディオン */
+/*General style */
+
+#accordion {
+  padding: 112px 150px;
+}
+.panel-title a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.panel-default > .panel-heading {
+  text-align: left;
+}
+.panel-heading {
+  padding: 15px 15px;
+}
+.panel-body {
+  background: rgb(71, 107, 107, 0.1);
+}
+
+/* Code for animation -- to change direction of chevron just change -40px to 40px and vice versa */
+.glyphicon-chevron-down-custom span,
+.glyphicon-chevron-up-custom span {
+  width: 10px;
+  height: 5px;
+  background-color: rgb(99, 99, 99);
+  display: inline-block;
+  transition: all 0.1s linear;
+}
+.glyphicon-chevron-down-custom .sp-1,
+.glyphicon-chevron-up-custom .sp-2 {
+  transform: skewY(-40deg);
+}
+.glyphicon-chevron-up-custom .sp-1,
+.glyphicon-chevron-down-custom .sp-2 {
+  transform: skewY(40deg);
+}
+.glyphicon {
+  top: -2px;
+}
+
+/* フッター */
+footer {
+  margin-top: 64px;
+}
+
+/* 分岐点 (pad対応) */ /* 分岐点 (pad対応) */ /* 分岐点 (pad対応) */
+@media screen and (max-width: 1100px) {
+  .about_profile {
+    width: 65%;
+  }
+}
+/* sp_レスポンシブ */ /* sp_レスポンシブ */ /* sp_レスポンシブ */
+@media screen and (max-width: 767px) {
+  .pc_only {
+    display: none;
+  }
+  main {
+    margin: 0 5%;
+  }
+  .about {
+    padding-top: 50px;
+  }
+  .about_profile {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  .profile_name {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .profile_date {
+    padding-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .about_wrap {
+    padding-top: 32px;
+  }
+  /* about_wrap 共通項目 始め */
+  .about_list01,
+  .about_list02 {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .about_list01 h2,
+  .about_list02 h2,
+  .about_list03 h2 {
+    color: #476b6b;
+    font-size: 24px;
+  }
+  .about_list01 p,
+  .about_list02 p,
+  .about_list03 p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .about_list01_text,
+  .about_list02_text,
+  .about_list03 {
+    width: 100%;
+  }
+  .about_list01 img,
+  .about_list02 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about_list01_text,
+  .about_list02_text {
+    padding-top: 32px;
+  }
+  .about_list01 p,
+  .about_list02 p,
+  .about_list03 p {
+    line-height: 1.7;
+    /* about_wrap 共通項目 終わり */
+  }
+  .about_list02 h2 {
+    line-height: 1.5;
+  }
+  .about_list03 h2 {
+    text-align: left;
+  }
+  .skill {
+    margin: 0 auto;
+    padding-top: 72px;
+  }
+  .skill h2 {
+    width: 25%;
+  }
+  .skill_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 40px;
+  }
+  .skill_list li {
+    width: 40%;
+    text-align: center;
+    margin: 0 5% 40px;
+  }
+  .skill_list img {
+    height: auto;
+  }
+  .skill_list img:last-child {
+    width: 100px;
+  }
+  .skill_list p {
+    text-align: left;
+    font-size: 14px;
+  }
+}
