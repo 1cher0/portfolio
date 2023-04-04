@@ -165,11 +165,13 @@ footer {
   .btn_left {
     position: fixed;
     top: 25%;
+    width: 9%;
   }
   .btn_right {
     position: fixed;
     top: 25%;
     right: 0;
+    width: 9%;
   }
   .work_wrap {
     display: block;
@@ -177,7 +179,8 @@ footer {
 
   /* 制作実績紹介 テキスト欄 */
   .work_web_content,
-  .work_banner_content {
+  .work_banner_content,
+  .work_other_content {
     width: 100%;
   }
 

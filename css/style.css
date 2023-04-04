@@ -335,13 +335,16 @@ a.btn_more:hover:before {
   .pc_only {
     display: none;
   }
-
+  .pagetop_sp {
+    z-index: 2;
+  }
   /* ファーストビュー */
   .fv img {
     width: 100%;
   }
   .logo {
     width: 80%;
+    z-index: 1;
   }
   .home_bg {
     width: 100%;
