@@ -109,48 +109,6 @@ about_list03 p {
   padding-top: 16px;
   line-height: 1.5;
 }
-/* アコーディオン */
-/*General style */
-
-#accordion {
-  padding: 112px 150px;
-}
-.panel-title a {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-right: 20px;
-}
-.panel-default > .panel-heading {
-  text-align: left;
-}
-.panel-heading {
-  padding: 15px 15px;
-}
-.panel-body {
-  background: rgb(71, 107, 107, 0.1);
-}
-
-/* Code for animation -- to change direction of chevron just change -40px to 40px and vice versa */
-.glyphicon-chevron-down-custom span,
-.glyphicon-chevron-up-custom span {
-  width: 10px;
-  height: 5px;
-  background-color: rgb(99, 99, 99);
-  display: inline-block;
-  transition: all 0.1s linear;
-}
-.glyphicon-chevron-down-custom .sp-1,
-.glyphicon-chevron-up-custom .sp-2 {
-  transform: skewY(-40deg);
-}
-.glyphicon-chevron-up-custom .sp-1,
-.glyphicon-chevron-down-custom .sp-2 {
-  transform: skewY(40deg);
-}
-.glyphicon {
-  top: -2px;
-}
 
 /* フッター */
 footer {
@@ -172,7 +130,10 @@ footer {
     margin: 0 5%;
   }
   .about {
-    padding-top: 50px;
+    padding-top: 80px;
+  }
+  h1 {
+    width: 32%;
   }
   .about_profile {
     width: 90%;
@@ -181,8 +142,8 @@ footer {
   .profile_name {
     padding-top: 20px;
     padding-bottom: 15px;
-    font-size: 24px;
-    letter-spacing: 0;
+    font-size: 20px;
+    letter-spacing: 0.1em;
   }
   .profile_date {
     padding-bottom: 20px;
