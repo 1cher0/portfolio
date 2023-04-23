@@ -37,7 +37,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 64px;
 }
 .about_list01 h2,
 .about_list02 h2,
@@ -53,7 +52,9 @@ h1 {
   line-height: 2;
 }
 /* about_wrap 共通項目 終わり */
-
+.about_list01 {
+  padding-bottom: 112px;
+}
 .about_list01 img {
   width: 45%;
 }
@@ -157,7 +158,6 @@ footer {
   .about_list01,
   .about_list02 {
     display: block;
-    padding-bottom: 60px;
   }
   .about_list01 h2,
   .about_list02 h2,
@@ -191,6 +191,9 @@ footer {
   .about_list03 p {
     line-height: 1.7;
     /* about_wrap 共通項目 終わり */
+  }
+  .about_list01 {
+    padding-bottom: 80px;
   }
   .about_list02 h2 {
     line-height: 1.5;
